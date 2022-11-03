@@ -10,11 +10,14 @@ spring:
         spring:
           json:
             trusted:
-              packages: "*"
+              packages: '*'
     producer:
       bootstrap-servers: localhost:9093
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    streams:
+      application-id: 'streams-app'
+    bootstrap-servers: localhost:9093
 
 server:
   port: 8120
