@@ -6,6 +6,6 @@
 - -p 옵션은 프로젝트 이름. (기본은 디렉토리 이름)
 
 ```code
-docker-compose -f dockerfile/docker-compose.yml -p kafka up
+docker-compose -f dockerfiles/docker-compose.yml -p kafka up
 ```
 
